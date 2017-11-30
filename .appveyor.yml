@@ -12,7 +12,7 @@ build: off
 build_script:
   - ps: dotnet build "OEISOutput.sln" -c Release
   - ps: dotnet publish "OEISOutput.sln" -v d --configuration Release -f net47
-  - ps: dotnet pack "**/*.csproj" -c Release -o "OEISOutput" --no-build
+  - ps: dotnet pack "OEISOutput.sln" -c Release -o "OEISOutput" --no-build
 
 artifacts:
   - path: "**\\OEISOutput\\*.nupkg"
