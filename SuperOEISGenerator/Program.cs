@@ -227,7 +227,7 @@ namespace OEISReader.DatabaseX
     <TargetFramework>net47</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include=""..\..\SuperOEISGenerator\SuperOEISGenerator\SuperOEISGenerator.csproj"" />
+    <ProjectReference Include=""..\SuperOEISGenerator\SuperOEISGenerator\SuperOEISGenerator.csproj"" />
   </ItemGroup>
 </Project>
 ");
