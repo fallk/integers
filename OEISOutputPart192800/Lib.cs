@@ -1,0 +1,6687 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Numerics;
+using SuperOEISGenerator.IO;
+namespace OEISReader.DatabaseX
+{
+
+public static class A243462
+{
+public static readonly long[] Value={ 51L,279L,326L,798L,810L,977L,1009L,1019L,1360L,1369L,1561L,1687L,1711L,1735L,1979L,2272L,2505L,2970L,3502L,4413L,4690L,5277L,5283L,5837L,6151L,6645L,6769L,6943L,7633L,8198L,8313L,8318L,10391L,10877L,11321L,15079L,16636L,17961L,18653L,18948L,19143L,20070L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243462Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243462.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243462Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243462.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243462.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243462Inst Instance=new A243462Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243463
+{
+public static readonly long[] Value={ 1L,2L,3L,4L,5L,6L,7L,8L,9L,10L,12L,14L,15L,16L,17L,19L,20L,21L,22L,23L,25L,29L,30L,31L,33L,37L,39L,41L,43L,44L,45L,46L,47L,48L,55L,59L,61L,65L,66L,67L,71L,72L,75L,77L,78L,79L,80L,83L,87L,89L,93L,95L,99L,101L,102L,103L,104L,105L,107L,109L,112L,115L,117L,118L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243463Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243463.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243463Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243463.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243463.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243463Inst Instance=new A243463Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243464
+{
+public static readonly long[] Value={ 0L,0L,3L,110L,657L,2172L,5375L,11178L,20685L,35192L,56187L,85350L,124553L,175860L,241527L,324002L,425925L,550128L,699635L,877662L,1087617L,1333100L,1617903L,1946010L,2321597L,2749032L,3232875L,3777878L,4388985L,5071332L,5830247L,6671250L,7600053L,8622560L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243464Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243464.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243464Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243464.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243464.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243464Inst Instance=new A243464Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243465
+{
+public static readonly long[] Value={ 0L,0L,0L,180L,4890L,36028L,154434L,488660L,1271450L,2883900L,5907298L,11182644L,19877850L,33562620L,54291010L,84691668L,128065754L,188492540L,270942690L,381399220L,526986138L,716104764L,958577730L,1265800660L,1650901530L,2128907708L,2716920674L,3434298420L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243465Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243465.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243465Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243465.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243465.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243465Inst Instance=new A243465Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243466
+{
+public static readonly long[] Value={ 0L,0L,0L,58L,18343L,362643L,2911226L,14601844L,54738489L,168157793L,446728228L,1062085146L,2312934779L,4690690399L,8967633918L,16312226288L,28436620141L,47781858189L,77746670984L,122966217718L,189647543823L,285968959211L,422550971074L,613006835244L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243466Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243466.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243466Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243466.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243466.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243466Inst Instance=new A243466Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243467
+{
+public static readonly long[] Value={ 0L,0L,0L,0L,33792L,2307376L,38049764L,316687056L,1756247962L,7430841848L,25895095920L,77947547416L,209206118486L,511919916960L,1160763672124L,2468985096704L,4973232330258L,9557709330856L,17631022607048L,31372223986440L,54066152166478L,90552261553040L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243467Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243467.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243467Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243467.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243467.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243467Inst Instance=new A243467Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243468
+{
+public static readonly BigInteger[] Value={ 1L,1L,4L,32L,401L,6941L,154092L,4181124L,134128092L,4966119716L,208417559828L,9776282249324L,506839013285272L,28777453303699456L,1775899632802691548L,BigInteger.Parse("118352734502149514340"),BigInteger.Parse("8471167817556712646853"),BigInteger.Parse("648104081945726392459965"),BigInteger.Parse("52780511829697565513665400") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243468Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243468.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243468Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243468.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243468.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243468Inst Instance=new A243468Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243469
+{
+public static readonly long[] Value={ 1L,2L,15L,32L,239L,510L,3809L,8128L,60705L,129538L,967471L,2064480L,15418831L,32902142L,245733825L,524369792L,3916322369L,8357014530L,62415424079L,133187862688L,994730462895L,2122648788478L,15853271982241L,33829192752960L,252657621252961L,539144435258882L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243469Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243469.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243469Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243469.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243469.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243469Inst Instance=new A243469Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243470
+{
+public static readonly long[] Value={ 1L,7L,15L,112L,239L,1785L,3809L,28448L,60705L,453383L,967471L,7225680L,15418831L,115157497L,245733825L,1835294272L,3916322369L,29249550855L,62415424079L,466157519408L,994730462895L,7429270759673L,15853271982241L,118402174635360L,252657621252961L,1887005523406087L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243470Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243470.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243470Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243470.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243470.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243470Inst Instance=new A243470Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243471
+{
+public static readonly long[] Value={ 3L,31L,73L,181L,367L,373L,523L,631L,733L,1021L,1039L,1171L,1489L,1723L,1777L,2203L,2557L,2683L,3121L,3187L,3319L,4441L,4591L,4621L,4801L,4957L,5113L,5167L,5323L,5431L,5659L,5839L,5851L,5857L,6883L,7057L,7129L,7297L,7309L,7477L,7993L,8017L,8209L,8221L,8689L,8821L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243471Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243471.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243471Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243471.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243471.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243471Inst Instance=new A243471Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243472
+{
+public static readonly long[] Value={ 2L,31L,101L,151L,181L,199L,229L,277L,307L,317L,379L,439L,479L,491L,647L,691L,797L,911L,997L,1039L,1051L,1181L,1291L,1367L,1381L,1471L,1511L,1549L,1657L,1709L,1847L,1867L,1987L,2081L,2099L,2111L,2207L,2467L,2621L,2707L,3041L,3221L,3259L,3541L,3571L,3581L,3769L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243472Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243472.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243472Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243472.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243472.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243472Inst Instance=new A243472Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243473
+{
+public static readonly long[] Value={ 0L,1L,1L,3L,1L,1L,1L,7L,4L,4L,1L,4L,1L,5L,3L,15L,1L,7L,1L,11L,11L,7L,1L,3L,6L,8L,13L,1L,1L,7L,1L,31L,5L,10L,13L,55L,1L,11L,17L,5L,1L,9L,1L,10L,11L,13L,1L,19L,8L,43L,7L,23L,1L,11L,17L,8L,23L,16L,1L,9L,1L,17L,41L,63L,19L,13L,1L,29L,9L,37L,1L,41L,1L,20L,49L,16L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243473Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243473.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243473Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243473.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243473.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243473Inst Instance=new A243473Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243474
+{
+public static readonly long[] Value={ 1L,6L,29L,124L,499L,1933L,7307L,27166L,99841L,363980L,1319404L,4763927L,17155264L,61672791L,221499015L,795198010L,2854898575L,10253237150L,36846414395L,132518215788L,477049025009L,1719101735260L,6201858101192L,22399768386170L,80998670324341L,293244129636085L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243474Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243474.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243474Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243474.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243474.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243474Inst Instance=new A243474Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243475
+{
+public static readonly long[] Value={ 2L,28L,241L,1667L,10142L,56748L,299485L,1514445L,7415873L,35424718L,165963977L,765639729L,3488740303L,15739196772L,70434524941L,313136541466L,1384706596078L,6096641331963L,26747810596747L,117015840972949L,510745056446585L,2225207050547044L,9680854941464722L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243475Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243475.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243475Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243475.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243475.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243475Inst Instance=new A243475Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243476
+{
+public static readonly long[] Value={ 10L,216L,2765L,27214L,227847L,1708700L,11832896L,77170252L,480381209L,2881934792L,16782041642L,95373448420L,531211249132L,2909490548577L,15712454516343L,83849134367589L,442957532385072L,2319975180476948L,12061609189508662L,62313958408668146L,320192732763382270L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243476Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243476.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243476Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243476.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243476.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243476Inst Instance=new A243476Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243477
+{
+public static readonly long[] Value={ 1L,98L,2637L,44051L,563444L,6054955L,57523592L,498540949L,4024955854L,30719216646L,224034574434L,1573966189886L,10719427410360L,71119561115093L,461496506508538L,2938387657219301L,18406158143420637L,113681266064450777L,693570688210367081L,4186481577282095644L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243477Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243477.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243477Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243477.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243477.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243477Inst Instance=new A243477Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243478
+{
+public static readonly BigInteger[] Value={ 22L,1546L,46947L,944701L,14745521L,193273378L,2228848403L,23305050081L,225560761204L,2051114040040L,17719591217257L,146674616051322L,1171101886353096L,9067551569835697L,68378670584901547L,504001041740002317L,3641720452674969516L,BigInteger.Parse("25859746275607624792") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243478Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243478.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243478Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243478.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243478.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243478Inst Instance=new A243478Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243479
+{
+public static readonly BigInteger[] Value={ 2L,570L,34643L,1139465L,26298831L,479669603L,7386945631L,100099764774L,1227140160022L,13879804132399L,146957303797639L,1472647088474040L,14087369324642004L,129522280702233381L,1150891407181302417L,9927963973481921295UL,BigInteger.Parse("83454334937159452579") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243479Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243479.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243479Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243479.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243479.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243479Inst Instance=new A243479Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243480
+{
+public static readonly BigInteger[] Value={ 130L,18196L,1027497L,35855578L,920132845L,19024724767L,334824869566L,5199938158961L,73073359931844L,946309985456857L,11449696018832655L,130815643776548834L,1423250326223813866L,14845562100052915605UL,BigInteger.Parse("149281547622659687547"),BigInteger.Parse("1453772869428542126084") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243480Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243480.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243480Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243480.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243480.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243480Inst Instance=new A243480Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243481
+{
+public static readonly BigInteger[] Value={ 17L,6867L,710088L,38504985L,1409180462L,39390143719L,903369758170L,17794252503829L,310620860769359L,4914610198933595L,71670394607559276L,975829774811610622L,12530984703191609205UL,BigInteger.Parse("153000363388748917171"),BigInteger.Parse("1787972768823076763190"),BigInteger.Parse("20107368357857569858580") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243481Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243481.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243481Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243481.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243481.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243481Inst Instance=new A243481Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243482
+{
+public static readonly BigInteger[] Value={ 1L,1842L,381540L,33260687L,1764436385L,67244544426L,2018462900473L,50530007996596L,1096301608172492L,21183116277395043L,371926458625987333L,6025302522233251390L,BigInteger.Parse("91147815762874899354"),BigInteger.Parse("1299862836761209689164"),BigInteger.Parse("17611186926254063273931"),BigInteger.Parse("228129250314546958924423") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243482Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243482.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243482Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243482.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243482.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243482Inst Instance=new A243482Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243483
+{
+public static readonly BigInteger[] Value={ 337L,160209L,23441160L,1838225077L,96489145747L,3811395804513L,121601176737897L,3282923948925446L,77478734844431881L,1636893656189797572L,BigInteger.Parse("31518723465396312391"),BigInteger.Parse("560886706260989476771"),BigInteger.Parse("9326899340333117160667"),BigInteger.Parse("146227744471477090965955"),BigInteger.Parse("2177361235069807245253904") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243483Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243483.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243483Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243483.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243483.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243483Inst Instance=new A243483Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243484
+{
+public static readonly long[] Value={ 1L,1L,2L,1L,6L,2L,28L,10L,1L,98L,22L,2L,570L,130L,17L,1L,1842L,337L,38L,2L,13104L,2437L,318L,26L,1L,45188L,7126L,805L,58L,2L,387323L,61504L,7496L,658L,37L,1L,1422382L,196200L,20978L,1631L,82L,2L,14272601L,1971561L,220497L,19175L,1216L,50L,1L,54989728L,6713935L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243484Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243484.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243484Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243484.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243484.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243484Inst Instance=new A243484Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243485
+{
+public static readonly long[] Value={ 0L,0L,0L,4L,6L,9L,10L,15L,14L,46L,0L,35L,22L,82L,26L,94L,0L,142L,34L,142L,38L,263L,0L,357L,46L,371L,0L,302L,0L,591L,58L,334L,62L,780L,0L,980L,0L,578L,74L,821L,0L,1340L,82L,785L,86L,1356L,0L,1987L,94L,1512L,0L,1353L,0L,2677L,106L,1421L,0L,2320L,0L,4242L,118L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243485Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243485.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243485Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243485.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243485.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243485Inst Instance=new A243485Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243486
+{
+public static readonly BigInteger[] Value={ 1L,1L,4L,56L,1808L,106232L,9896612L,1340462108L,248849495342L,60665985936086L,18799855981319036L,7218637248203263916L,BigInteger.Parse("3364163526700490152184"),BigInteger.Parse("1870786124908364192990576"),BigInteger.Parse("1223751739268135893514592188"),BigInteger.Parse("930266933532473430610242752804"),BigInteger.Parse("813248080956872294046978463360859") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243486Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243486.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243486Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243486.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243486.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243486Inst Instance=new A243486Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243487
+{
+public static readonly long[] Value={ 2L,2L,4L,1L,1L,4L,3L,2L,2L,3L,4L,8L,1L,1L,10L,6L,4L,4L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243487Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243487.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243487Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243487.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243487.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243487Inst Instance=new A243487Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243488
+{
+public static readonly long[] Value={ 0L,0L,1L,0L,2L,0L,4L,3L,7L,0L,8L,0L,8L,6L,11L,0L,13L,0L,14L,10L,17L,0L,19L,8L,22L,17L,25L,0L,25L,0L,26L,19L,29L,13L,32L,0L,34L,26L,37L,0L,35L,0L,37L,27L,40L,0L,41L,13L,44L,33L,47L,0L,49L,23L,52L,39L,55L,0L,53L,0L,55L,41L,58L,27L,61L,0L,62L,46L,65L,0L,65L,0L,65L,48L,68L,22L,71L,0L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243488Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243488.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243488Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243488.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243488.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243488Inst Instance=new A243488Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243489
+{
+public static readonly long[] Value={ 6L,7L,11L,12L,14L,15L,17L,18L,19L,21L,25L,26L,28L,29L,31L,32L,33L,35L,37L,38L,39L,40L,41L,42L,43L,44L,45L,46L,47L,48L,49L,50L,51L,52L,53L,57L,58L,59L,60L,61L,62L,63L,67L,68L,70L,71L,73L,74L,75L,77L,79L,80L,81L,82L,83L,84L,85L,86L,87L,88L,89L,90L,91L,92L,93L,94L,95L,99L,100L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243489Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243489.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243489Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243489.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243489.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243489Inst Instance=new A243489Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243490
+{
+public static readonly long[] Value={ 0L,1L,2L,3L,4L,5L,8L,9L,10L,13L,16L,20L,22L,23L,24L,27L,30L,34L,36L,54L,55L,56L,64L,65L,66L,69L,72L,76L,78L,96L,97L,98L,106L,126L,136L,157L,158L,162L,165L,183L,186L,193L,196L,197L,198L,201L,204L,208L,210L,228L,229L,230L,238L,258L,268L,289L,290L,294L,297L,315L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243490Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243490.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243490Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243490.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243490.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243490Inst Instance=new A243490Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243491
+{
+public static readonly long[] Value={ 1L,2L,4L,3L,8L,6L,7L,6L,5L,16L,12L,14L,12L,10L,19L,13L,14L,12L,9L,17L,13L,10L,11L,32L,24L,28L,24L,20L,38L,26L,28L,24L,18L,34L,26L,20L,22L,53L,37L,43L,37L,29L,38L,26L,28L,24L,18L,21L,21L,18L,15L,67L,41L,43L,37L,23L,34L,26L,20L,15L,59L,41L,29L,22L,31L,64L,48L,56L,48L,40L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243491Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243491.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243491Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243491.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243491.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243491Inst Instance=new A243491Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243492
+{
+public static readonly long[] Value={ 0L,0L,0L,0L,0L,0L,1L,-1L,0L,0L,0L,2L,-2L,0L,7L,4L,0L,-7L,-4L,7L,0L,-7L,0L,0L,0L,4L,-4L,0L,14L,8L,0L,-14L,-8L,14L,0L,-14L,0L,29L,19L,25L,16L,14L,10L,5L,-10L,-29L,-19L,-5L,-16L,-25L,-14L,47L,26L,17L,0L,0L,0L,-17L,-47L,-26L,37L,12L,-12L,-37L,0L,0L,0L,8L,-8L,0L,28L,16L,0L,-28L,-16L,28L,0L,-28L,0L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243492Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243492.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243492Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243492.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243492.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243492Inst Instance=new A243492Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243493
+{
+public static readonly long[] Value={ 1L,2L,4L,3L,8L,6L,5L,16L,12L,10L,14L,13L,11L,32L,24L,20L,28L,26L,22L,37L,23L,34L,31L,64L,48L,40L,56L,52L,44L,74L,46L,68L,62L,76L,39L,89L,61L,47L,86L,101L,118L,109L,127L,128L,96L,80L,112L,104L,88L,148L,92L,136L,124L,152L,78L,178L,122L,94L,172L,202L,236L,218L,254L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243493Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243493.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243493Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243493.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243493.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243493Inst Instance=new A243493Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243494
+{
+public static readonly long[] Value={ 1L,2L,3L,4L,5L,6L,8L,10L,11L,12L,13L,14L,16L,20L,22L,23L,24L,26L,28L,31L,32L,34L,37L,39L,40L,44L,46L,47L,48L,52L,56L,61L,62L,64L,68L,74L,76L,78L,80L,86L,88L,89L,92L,94L,96L,101L,104L,109L,112L,113L,118L,122L,123L,124L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243494Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243494.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243494Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243494.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243494.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243494Inst Instance=new A243494Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243495
+{
+public static readonly long[] Value={ 0L,1L,2L,3L,4L,7L,8L,9L,15L,17L,21L,22L,23L,45L,55L,58L,63L,64L,65L,113L,124L,129L,153L,170L,185L,189L,195L,196L,197L,393L,493L,515L,524L,564L,591L,612L,617L,624L,625L,626L,1103L,1237L,1251L,1330L,1535L,1628L,1679L,1794L,1859L,1897L,1911L,1973L,2012L,2040L,2046L,2054L,2055L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243495Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243495.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243495Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243495.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243495.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243495Inst Instance=new A243495Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243496
+{
+public static readonly long[] Value={ 1L,2L,4L,3L,8L,7L,5L,16L,9L,19L,17L,11L,32L,53L,23L,67L,59L,31L,64L,27L,49L,131L,25L,241L,83L,331L,277L,127L,128L,311L,103L,227L,739L,97L,1523L,431L,2221L,1787L,709L,256L,81L,361L,719L,169L,169L,289L,2063L,121L,563L,1433L,5623L,509L,12763L,3001L,19577L,15299L,5381L,512L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243496Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243496.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243496Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243496.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243496.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243496Inst Instance=new A243496Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243497
+{
+public static readonly long[] Value={ 1L,2L,3L,4L,5L,7L,8L,9L,11L,16L,17L,19L,23L,25L,27L,31L,32L,49L,53L,59L,64L,67L,81L,83L,97L,103L,121L,125L,127L,128L,131L,169L,227L,241L,243L,256L,277L,289L,311L,331L,343L,361L,419L,431L,509L,512L,529L,563L,661L,691L,709L,719L,739L,841L,961L,1009L,1024L,1433L,1523L,1619L,1681L,1787L,1849L,1879L,2063L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243497Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243497.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243497Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243497.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243497.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243497Inst Instance=new A243497Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243498
+{
+public static readonly long[] Value={ 2L,3L,4L,6L,7L,9L,12L,13L,15L,16L,19L,21L,22L,27L,28L,30L,31L,36L,37L,39L,42L,45L,46L,49L,51L,52L,57L,58L,60L,61L,66L,69L,72L,73L,75L,76L,81L,82L,87L,88L,91L,96L,97L,99L,102L,105L,109L,111L,112L,118L,120L,126L,127L,129L,132L,133L,135L,136L,142L,147L,148L,150L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243498Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243498.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243498Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243498.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243498.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243498Inst Instance=new A243498Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243499
+{
+public static readonly long[] Value={ 1L,1L,2L,1L,3L,2L,4L,1L,4L,3L,6L,2L,9L,4L,8L,1L,5L,4L,8L,3L,12L,6L,12L,2L,16L,9L,18L,4L,27L,8L,16L,1L,6L,5L,10L,4L,15L,8L,16L,3L,20L,12L,24L,6L,36L,12L,24L,2L,25L,16L,32L,9L,48L,18L,36L,4L,64L,27L,54L,8L,81L,16L,32L,1L,7L,6L,12L,5L,18L,10L,20L,4L,24L,15L,30L,8L,45L,16L,32L,3L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243499Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243499.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243499Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243499.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243499.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243499Inst Instance=new A243499Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243500
+{
+public static readonly long[] Value={ 2L,1L,4L,3L,6L,5L,8L,7L,10L,9L,22L,27L,20L,15L,14L,33L,18L,17L,28L,13L,34L,11L,62L,29L,26L,25L,12L,19L,24L,75L,68L,43L,16L,21L,46L,69L,118L,45L,82L,243L,142L,99L,32L,63L,38L,35L,78L,171L,50L,49L,52L,51L,116L,275L,74L,147L,122L,81L,60L,59L,88L,23L,44L,201L,66L,65L,98L,31L,36L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243500Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243500.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243500Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243500.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243500.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243500Inst Instance=new A243500Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243501
+{
+public static readonly long[] Value={ 2L,4L,6L,10L,8L,16L,12L,28L,26L,22L,14L,46L,18L,34L,36L,82L,20L,76L,24L,64L,56L,40L,30L,136L,50L,52L,126L,100L,32L,106L,38L,244L,66L,58L,78L,226L,42L,70L,86L,190L,44L,166L,48L,118L,176L,88L,54L,406L,122L,148L,96L,154L,60L,376L,92L,298L,116L,94L,62L,316L,68L,112L,276L,730L,120L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243501Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243501.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243501Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243501.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243501.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243501Inst Instance=new A243501Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243502
+{
+public static readonly long[] Value={ 2L,4L,6L,10L,8L,14L,22L,12L,26L,34L,20L,38L,18L,16L,46L,58L,28L,30L,62L,44L,74L,82L,24L,86L,50L,52L,94L,42L,68L,106L,118L,40L,66L,122L,76L,134L,142L,36L,70L,146L,32L,158L,78L,92L,166L,110L,116L,102L,178L,56L,194L,202L,60L,206L,214L,124L,218L,114L,88L,130L,98L,148L,54L,226L,164L,254L,170L,48L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243502Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243502.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243502Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243502.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243502.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243502Inst Instance=new A243502Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243503
+{
+public static readonly long[] Value={ 0L,1L,2L,2L,3L,4L,4L,3L,3L,6L,5L,6L,6L,8L,5L,4L,7L,5L,8L,9L,7L,10L,9L,8L,4L,12L,4L,12L,10L,8L,11L,5L,9L,14L,6L,7L,12L,16L,11L,12L,13L,11L,14L,15L,7L,18L,15L,10L,5L,7L,13L,18L,16L,6L,8L,16L,15L,20L,17L,11L,18L,22L,10L,6L,10L,14L,19L,21L,17L,10L,20L,9L,21L,24L,6L,24L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243503Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243503.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243503Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243503.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243503.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243503Inst Instance=new A243503Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243504
+{
+public static readonly long[] Value={ 1L,1L,1L,2L,1L,4L,1L,3L,2L,8L,1L,9L,1L,16L,4L,4L,1L,6L,1L,27L,8L,32L,1L,16L,2L,64L,3L,81L,1L,18L,1L,5L,16L,128L,4L,12L,1L,256L,32L,64L,1L,54L,1L,243L,9L,512L,1L,25L,2L,12L,64L,729L,1L,8L,8L,256L,128L,1024L,1L,48L,1L,2048L,27L,6L,16L,162L,1L,2187L,256L,36L,1L,20L,1L,4096L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243504Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243504.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243504Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243504.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243504.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243504Inst Instance=new A243504Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243505
+{
+public static readonly long[] Value={ 1L,2L,4L,8L,3L,16L,32L,6L,64L,128L,12L,256L,9L,5L,512L,1024L,24L,18L,2048L,48L,4096L,8192L,10L,16384L,27L,96L,32768L,36L,192L,65536L,131072L,20L,72L,262144L,384L,524288L,1048576L,15L,54L,2097152L,7L,4194304L,144L,768L,8388608L,108L,1536L,288L,16777216L,40L,33554432L,67108864L,30L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243505Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243505.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243505Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243505.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243505.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243505Inst Instance=new A243505Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243506
+{
+public static readonly long[] Value={ 1L,2L,5L,3L,14L,8L,41L,4L,13L,23L,122L,11L,365L,68L,38L,6L,1094L,18L,3281L,32L,113L,203L,9842L,17L,63L,608L,25L,95L,29525L,53L,88574L,7L,338L,1823L,188L,28L,265721L,5468L,1013L,50L,797162L,158L,2391485L,284L,74L,16403L,7174454L,20L,313L,88L,3038L,851L,21523361L,39L,563L,149L,9113L,49208L,64570082L,83L,193710245L,147623L,221L,9L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243506Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243506.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243506Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243506.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243506.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243506Inst Instance=new A243506Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243507
+{
+public static readonly long[] Value={ 1L,2L,3L,4L,5L,6L,7L,8L,9L,63L,64L,93L,377L,643L,699L,760L,2428L,3435L,13073L,46864L,184405L,208858L,1313290L,2326990L,2868720L,2868741L,18273988L,25265859L,33690905L,87889176L,194123725L,589957694L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243507Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243507.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243507Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243507.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243507.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243507Inst Instance=new A243507Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243508
+{
+public static readonly long[] Value={ 8L,8L,0L,5L,8L,3L,3L,4L,8L,3L,3L,9L,8L,2L,8L,1L,2L,4L,2L,1L,2L,9L,2L,3L,7L,8L,3L,7L,8L,4L,4L,9L,8L,7L,4L,3L,6L,8L,2L,4L,1L,8L,6L,4L,8L,4L,6L,8L,1L,5L,3L,1L,7L,1L,8L,1L,1L,0L,0L,1L,8L,1L,8L,6L,8L,5L,4L,4L,8L,4L,7L,7L,0L,5L,6L,8L,1L,6L,5L,2L,8L,3L,6L,5L,2L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243508Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243508.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243508Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243508.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243508.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243508Inst Instance=new A243508Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243509
+{
+public static readonly BigInteger[] Value={ 1L,2L,17L,356L,15050L,1090340L,120880118L,19006269152L,4019815232183L,1100169446737862L,378260919290968391L,BigInteger.Parse("159596027891781179588"),BigInteger.Parse("81074448438738151958144"),BigInteger.Parse("48811678984945504941033320"),BigInteger.Parse("34368839633409849003075848348"),BigInteger.Parse("27981522156103308265337853752864") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243509Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243509.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243509Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243509.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243509.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243509Inst Instance=new A243509Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243510
+{
+public static readonly BigInteger[] Value={ 1L,1L,3L,58L,280L,170985L,3037561L,35203565096L,3263262629905L,580992839261272720L,BigInteger.Parse("326207195516663381931"),BigInteger.Parse("811740344447523575023878026"),BigInteger.Parse("3011882198082438957330143630563"),BigInteger.Parse("98662906581850761030365769529236858241"),BigInteger.Parse("2565014347691062208319404612723752103028288") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243510Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243510.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243510Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243510.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243510.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243510Inst Instance=new A243510Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243511
+{
+public static readonly BigInteger[] Value={ 1L,1L,6L,110L,18343L,9382388L,43019044258L,558605693874364L,BigInteger.Parse("66236678406528448449"),BigInteger.Parse("21324218858696872235790649"),BigInteger.Parse("63694548993039561351614359349824"),BigInteger.Parse("503614181552476916158019971522161589536"),BigInteger.Parse("37393123107750749849065997795023579513072683993"),BigInteger.Parse("7226766277015485498828489748946241590630740791829515424") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243511Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243511.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243511Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243511.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243511.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243511Inst Instance=new A243511Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243512
+{
+public static readonly long[] Value={ 1L,2L,120L,4L,9L,14L,25L,8L,26L,42L,34L,20L,121L,27L,169L,16L,58L,39L,289L,48L,74L,114L,82L,52L,529L,94L,760L,133L,106L,68L,841L,32L,122L,186L,172L,93L,522L,70L,146L,217L,81L,63L,1656L,50L,504L,258L,178L,116L,2209L,75L,194L,231L,202L,80L,2809L,36L,218L,343L,226L,148L,3481L,130L,3721L,64L,332L,164L,108000L,136L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243512Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243512.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243512Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243512.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243512.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243512Inst Instance=new A243512Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243513
+{
+public static readonly long[] Value={ 3L,5L,10L,24L,65L,187L,552L,1646L,4927L,14769L,44294L,132868L,398589L,1195751L,3587236L,10761690L,32285051L,96855133L,290565378L,871696112L,2615088313L,7845264915L,23535794720L,70607384134L,211822152375L,635466457097L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243513Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243513.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243513Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243513.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243513.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243513Inst Instance=new A243513Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243514
+{
+public static readonly long[] Value={ 3L,5L,10L,25L,76L,263L,978L,3773L,14824L,58771L,234046L,934121L,3732372L,14921279L,59668714L,238642069L,954502720L,3817879787L,15271256982L,61084503617L,244336965868L,977345766295L,3909378870850L,15637507094765L,62550011601816L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243514Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243514.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243514Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243514.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243514.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243514Inst Instance=new A243514Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243515
+{
+public static readonly long[] Value={ 3L,5L,10L,25L,77L,279L,1134L,4979L,22981L,109453L,531458L,2610933L,12917685L,64181627L,319695982L,1594859887L,7963472189L,39784944801L,198827606706L,993846943841L,4968361974493L,24839192686975L,124188113975630L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243515Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243515.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243515Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243515.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243515.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243515Inst Instance=new A243515Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243516
+{
+public static readonly long[] Value={ 3L,5L,10L,25L,77L,280L,1156L,5267L,25915L,135214L,736706L,4139833L,23767897L,138468212L,814675840L,4824766303L,28699128503L,171207852154L,1023332115838L,6124430348357L,36684624841813L,219860794899520L,1318179574171580L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243516Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243516.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243516Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243516.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243516.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243516Inst Instance=new A243516Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243517
+{
+public static readonly long[] Value={ 3L,5L,10L,25L,77L,280L,1157L,5296L,26406L,141585L,807064L,4837587L,30181075L,194210670L,1279159631L,8571132698L,58153599684L,398124806735L,2743173705258L,18987825983429L,131858977691833L,917797527716980L,6398758306106345L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243517Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243517.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243517Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243517.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243517.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243517Inst Instance=new A243517Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243518
+{
+public static readonly long[] Value={ 3L,5L,10L,25L,77L,280L,1157L,5297L,26443L,142372L,819731L,5009281L,32252381L,217194296L,1518771097L,10952508217L,80950970231L,609958242292L,4664758144295L,36080343085145L,281462510140633L,2209800140157400L,17432715938447165L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243518Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243518.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243518Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243518.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243518.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243518Inst Instance=new A243518Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243519
+{
+public static readonly long[] Value={ 2L,3L,2L,3L,4L,2L,3L,5L,5L,2L,3L,5L,9L,6L,2L,3L,5L,10L,17L,7L,2L,3L,5L,10L,24L,33L,8L,2L,3L,5L,10L,25L,65L,65L,9L,2L,3L,5L,10L,25L,76L,187L,129L,10L,2L,3L,5L,10L,25L,77L,263L,552L,257L,11L,2L,3L,5L,10L,25L,77L,279L,978L,1646L,513L,12L,2L,3L,5L,10L,25L,77L,280L,1134L,3773L,4927L,1025L,13L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243519Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243519.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243519Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243519.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243519.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243519Inst Instance=new A243519Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243520
+{
+public static readonly long[] Value={ 0L,8L,11L,19L,22L,30L,33L,41L,44L,52L,55L,63L,66L,74L,77L,85L,88L,96L,99L,107L,110L,118L,121L,129L,132L,140L,143L,151L,154L,162L,165L,173L,176L,184L,187L,195L,198L,206L,209L,217L,220L,228L,231L,239L,242L,250L,253L,261L,264L,272L,275L,283L,286L,294L,297L,305L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243520Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243520.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243520Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243520.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243520.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243520Inst Instance=new A243520Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243521
+{
+public static readonly long[] Value={ 1L,3L,12L,57L,300L,1701L,10206L,63825L,411096L,2702349L,17992506L,120543561L,808224372L,5400815829L,35868103734L,236354531841L,1544182760496L,10001335837725L,64233753928722L,409298268016761L,2589206145139596L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243521Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243521.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243521Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243521.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243521.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243521Inst Instance=new A243521Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243522
+{
+public static readonly long[] Value={ 31L,181L,1039L,4591L,13687L,21589L,30211L,40771L,41641L,41947L,55441L,56437L,63559L,70867L,81307L,83407L,83869L,87649L,91639L,111229L,126199L,126499L,134287L,157999L,189559L,201307L,214129L,220699L,225751L,228559L,251431L,281557L,289717L,290839L,323767L,337639L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243522Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243522.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243522Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243522.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243522.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243522Inst Instance=new A243522Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243523
+{
+public static readonly long[] Value={ 1L,2L,6L,7L,2L,0L,6L,3L,6L,0L,6L,1L,1L,4L,7L,1L,2L,9L,7L,6L,4L,9L,3L,4L,8L,8L,8L,1L,8L,6L,3L,9L,9L,4L,4L,4L,2L,6L,9L,3L,6L,5L,0L,1L,9L,1L,8L,5L,2L,4L,3L,5L,7L,4L,8L,9L,4L,6L,1L,7L,5L,7L,0L,6L,9L,7L,2L,8L,4L,5L,0L,9L,4L,9L,7L,0L,0L,9L,2L,9L,9L,6L,3L,8L,3L,6L,2L,7L,2L,4L,7L,3L,6L,9L,7L,8L,9L,6L,5L,1L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243523Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243523.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243523Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243523.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243523.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243523Inst Instance=new A243523Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243524
+{
+public static readonly long[] Value={ 1L,3L,5L,2L,1L,7L,8L,3L,7L,5L,6L,0L,6L,9L,0L,4L,3L,9L,9L,2L,2L,8L,9L,2L,2L,1L,6L,6L,8L,2L,8L,5L,7L,7L,3L,4L,5L,2L,9L,3L,2L,8L,5L,8L,4L,3L,5L,0L,2L,1L,9L,2L,2L,0L,6L,0L,8L,3L,4L,6L,8L,3L,5L,9L,6L,2L,3L,9L,5L,3L,7L,4L,9L,2L,2L,5L,7L,3L,7L,1L,9L,8L,8L,7L,1L,8L,0L,1L,4L,2L,1L,1L,6L,8L,2L,4L,0L,3L,0L,6L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243524Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243524.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243524Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243524.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243524.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243524Inst Instance=new A243524Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243525
+{
+public static readonly long[] Value={ 4L,1L,5L,9L,2L,7L,1L,0L,8L,9L,8L,3L,2L,4L,8L,1L,1L,9L,1L,8L,1L,4L,0L,9L,0L,5L,8L,6L,0L,1L,8L,9L,3L,4L,2L,4L,0L,8L,2L,6L,3L,7L,7L,9L,0L,4L,2L,0L,3L,4L,6L,2L,9L,9L,4L,6L,2L,3L,7L,0L,2L,8L,5L,5L,8L,1L,1L,5L,5L,3L,1L,7L,9L,5L,1L,9L,4L,4L,9L,8L,5L,5L,3L,5L,0L,7L,6L,3L,7L,4L,4L,8L,0L,9L,6L,7L,7L,9L,5L,1L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243525Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243525.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243525Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243525.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243525.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243525Inst Instance=new A243525Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243526
+{
+public static readonly long[] Value={ 3L,9L,1L,9L,1L,7L,7L,7L,6L,1L,2L,6L,7L,5L,0L,4L,5L,2L,8L,1L,9L,6L,8L,4L,9L,6L,5L,8L,0L,0L,0L,9L,1L,9L,9L,8L,7L,2L,0L,2L,2L,0L,9L,9L,1L,2L,2L,1L,1L,3L,0L,8L,1L,8L,7L,4L,1L,9L,6L,8L,0L,7L,0L,6L,3L,7L,4L,5L,8L,7L,3L,4L,6L,1L,9L,3L,3L,5L,8L,6L,8L,4L,4L,3L,5L,8L,2L,5L,1L,4L,1L,6L,5L,2L,8L,8L,2L,6L,3L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243526Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243526.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243526Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243526.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243526.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243526Inst Instance=new A243526Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243527
+{
+public static readonly long[] Value={ 1117L,2111L,4111L,8111L,10111L,11113L,11117L,11119L,11131L,11149L,11159L,11161L,11171L,11173L,11177L,11197L,16111L,22111L,25111L,26111L,28111L,35111L,40111L,41113L,41117L,44111L,47111L,50111L,58111L,65111L,68111L,70111L,71119L,79111L,80111L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243527Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243527.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243527Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243527.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243527.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243527Inst Instance=new A243527Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243528
+{
+public static readonly long[] Value={ 1564L,4057L,4654L,5884L,26599L,30139L,37204L,66532L,74227L,80812L,98137L,113929L,124249L,138604L,245524L,249847L,250879L,299767L,309469L,315277L,340504L,346279L,359467L,362674L,367069L,401407L,410332L,435049L,437377L,438799L,537844L,550582L,579814L,587047L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243528Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243528.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243528Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243528.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243528.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243528Inst Instance=new A243528Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243529
+{
+public static readonly long[] Value={ 127L,1123L,1129L,1201L,1213L,1217L,1223L,1229L,1231L,1237L,1249L,1259L,1277L,1279L,1283L,1289L,1291L,1297L,2129L,3121L,4127L,4129L,6121L,7121L,7127L,7129L,8123L,9127L,11213L,11239L,11243L,11251L,11257L,11261L,11273L,11279L,11287L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243529Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243529.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243529Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243529.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243529.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243529Inst Instance=new A243529Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243530
+{
+public static readonly long[] Value={ 149L,1409L,1423L,1427L,1429L,1433L,1439L,1447L,1451L,1453L,1459L,1471L,1481L,1483L,1487L,1489L,1493L,1499L,2141L,2143L,5147L,6143L,8147L,10141L,11149L,11411L,11423L,11437L,11443L,11447L,11467L,11471L,11483L,11489L,11491L,11497L,12143L,12149L,13147L,14009L,14011L,14029L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243530Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243530.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243530Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243530.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243530.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243530Inst Instance=new A243530Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243531
+{
+public static readonly long[] Value={ 151L,157L,1151L,1153L,1511L,1523L,1531L,1543L,1549L,1553L,1559L,1567L,1571L,1579L,1583L,1597L,2153L,4153L,4157L,4159L,5153L,6151L,7151L,7159L,9151L,9157L,10151L,10159L,11159L,11503L,11519L,11527L,11549L,11551L,11579L,11587L,11593L,11597L,12157L,13151L,13159L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243531Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243531.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243531Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243531.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243531.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243531Inst Instance=new A243531Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243532
+{
+public static readonly long[] Value={ 163L,167L,1163L,1601L,1607L,1609L,1613L,1619L,1621L,1627L,1637L,1657L,1663L,1667L,1669L,1693L,1697L,1699L,2161L,3163L,3167L,3169L,5167L,6163L,8161L,8167L,9161L,10163L,10169L,11161L,11617L,11621L,11633L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243532Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243532.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243532Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243532.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243532.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243532Inst Instance=new A243532Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243533
+{
+public static readonly long[] Value={ 1L,3L,5L,3L,1L,3L,0L,2L,7L,2L,2L,9L,5L,9L,3L,3L,2L,8L,1L,6L,5L,2L,9L,4L,4L,0L,3L,2L,4L,9L,2L,2L,5L,9L,6L,2L,6L,9L,0L,8L,7L,9L,0L,4L,2L,4L,3L,7L,1L,9L,1L,1L,2L,6L,4L,6L,1L,2L,0L,1L,7L,2L,2L,6L,3L,3L,0L,9L,3L,7L,0L,1L,6L,4L,8L,7L,3L,5L,1L,8L,4L,2L,2L,3L,9L,6L,4L,3L,0L,6L,7L,4L,8L,6L,0L,1L,5L,4L,8L,7L,4L,6L,0L,1L,4L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243533Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243533.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243533Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243533.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243533.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243533Inst Instance=new A243533Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243534
+{
+public static readonly BigInteger[] Value={ 1L,11L,1111111111111111111L,BigInteger.Parse("11111111111111111111111") };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(e=>e.ToByteArray());
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243534Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243534.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243534Inst : IEnumerable<BigInteger>
+{
+public static readonly BigInteger[] Value=A243534.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+for (var i=0; i < Value.Length; i++)
+{
+var b=Value[i].ToByteArray();
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243534.Bytes);
+public BigInteger this[int i]=>Value[i];
+
+public static A243534Inst Instance=new A243534Inst();
+
+public IEnumerator<BigInteger> GetEnumerator()
+{
+return (Value as IEnumerable<BigInteger>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243535
+{
+public static readonly long[] Value={ 2L,3L,5L,7L,13L,17L,19L,22L,31L,33L,41L,55L,61L,71L,77L,101L,113L,121L,131L,151L,181L,191L,199L,211L,311L,313L,331L,661L,811L,881L,911L,919L,991L,1111L,1117L,1151L,1171L,1181L,1511L,1777L,1811L,1999L,2111L,2221L,3313L,3331L,4111L,4441L,6661L,7177L,7717L,8111L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243535Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243535.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243535Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243535.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243535.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243535Inst Instance=new A243535Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243536
+{
+public static readonly long[] Value={ 4L,9L,15L,23L,25L,29L,37L,39L,43L,44L,47L,53L,59L,67L,73L,79L,83L,89L,93L,95L,97L,99L,103L,107L,109L,111L,119L,122L,125L,127L,137L,139L,143L,149L,155L,157L,163L,167L,173L,179L,187L,193L,197L,202L,223L,227L,229L,233L,241L,242L,251L,271L,277L,281L,303L,317L,337L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243536Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243536.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243536Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243536.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243536.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243536Inst Instance=new A243536Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243537
+{
+public static readonly long[] Value={ 6L,8L,10L,14L,21L,26L,35L,49L,50L,51L,62L,65L,66L,82L,85L,88L,91L,110L,115L,117L,123L,133L,141L,142L,159L,165L,169L,183L,209L,213L,217L,221L,226L,231L,239L,244L,250L,253L,257L,262L,263L,269L,275L,283L,293L,295L,299L,307L,309L,319L,326L,333L,347L,349L,355L,359L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243537Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243537.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243537Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243537.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243537.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243537Inst Instance=new A243537Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243538
+{
+public static readonly long[] Value={ 12L,16L,20L,27L,28L,34L,38L,45L,46L,57L,58L,69L,74L,75L,94L,100L,118L,124L,129L,132L,145L,153L,154L,161L,164L,166L,171L,175L,177L,178L,185L,194L,195L,205L,206L,214L,215L,218L,219L,220L,237L,254L,265L,273L,274L,279L,284L,287L,289L,291L,297L,298L,301L,302L,305L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243538Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243538.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243538Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243538.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243538.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243538Inst Instance=new A243538Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243539
+{
+public static readonly long[] Value={ 18L,24L,30L,32L,40L,42L,48L,52L,63L,64L,81L,86L,87L,92L,98L,105L,106L,128L,130L,134L,146L,147L,148L,158L,176L,186L,188L,198L,200L,201L,203L,222L,235L,246L,247L,248L,249L,255L,259L,264L,278L,286L,310L,314L,322L,327L,328L,329L,330L,332L,334L,338L,346L,351L,357L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243539Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243539.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243539Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243539.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243539.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243539Inst Instance=new A243539Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243540
+{
+public static readonly long[] Value={ 36L,56L,60L,68L,70L,78L,80L,84L,96L,112L,116L,135L,136L,138L,150L,172L,184L,189L,190L,192L,196L,207L,212L,225L,230L,238L,243L,245L,256L,260L,261L,267L,268L,272L,285L,290L,292L,344L,345L,350L,358L,368L,384L,387L,388L,396L,400L,402L,418L,441L,444L,455L,459L,462L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243540Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243540.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243540Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243540.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243540.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243540Inst Instance=new A243540Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243541
+{
+public static readonly long[] Value={ 72L,76L,102L,104L,120L,126L,140L,144L,160L,168L,170L,182L,208L,210L,224L,232L,234L,236L,240L,258L,266L,276L,282L,288L,294L,296L,300L,308L,318L,320L,336L,352L,370L,372L,376L,416L,424L,430L,435L,436L,438L,448L,460L,464L,470L,476L,483L,494L,518L,520L,528L,536L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243541Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243541.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243541Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243541.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243541.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243541Inst Instance=new A243541Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243542
+{
+public static readonly long[] Value={ 54L,90L,114L,152L,156L,162L,174L,180L,204L,228L,252L,280L,315L,316L,340L,342L,348L,354L,356L,364L,378L,390L,392L,405L,408L,414L,420L,456L,468L,472L,474L,480L,486L,490L,510L,516L,522L,532L,534L,546L,552L,556L,560L,564L,576L,582L,584L,588L,592L,594L,600L,616L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243542Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243542.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243542Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243542.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243542.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243542Inst Instance=new A243542Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243543
+{
+public static readonly long[] Value={ 1L,2L,4L,6L,12L,18L,36L,72L,54L,108L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243543Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243543.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243543Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243543.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243543.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243543Inst Instance=new A243543Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243544
+{
+public static readonly long[] Value={ 5L,11L,29L,37L,41L,43L,53L,61L,71L,73L,83L,97L,109L,113L,127L,137L,149L,157L,167L,181L,191L,211L,223L,229L,241L,271L,277L,281L,307L,317L,331L,359L,389L,421L,433L,443L,461L,463L,487L,499L,547L,557L,571L,587L,601L,617L,631L,659L,661L,683L,691L,701L,709L,733L,757L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243544Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243544.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243544Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243544.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243544.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243544Inst Instance=new A243544Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243545
+{
+public static readonly long[] Value={ 1L,0L,1L,3L,3L,14L,50L,390L,3627L,52858L,1045177L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243545Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243545.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243545Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243545.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243545.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243545Inst Instance=new A243545Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243546
+{
+public static readonly long[] Value={ 1L,1L,1L,2L,1L,2L,1L,3L,1L,4L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243546Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243546.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243546Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243546.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243546.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243546Inst Instance=new A243546Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243547
+{
+public static readonly long[] Value={ 1L,0L,1L,1L,2L,4L,8L,35L,115L,629L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243547Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243547.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243547Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243547.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243547.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243547Inst Instance=new A243547Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243548
+{
+public static readonly long[] Value={ 1L,1L,1L,2L,2L,4L,1L,8L,1L,19L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243548Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243548.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243548Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243548.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243548.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243548Inst Instance=new A243548Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243549
+{
+public static readonly long[] Value={ 0L,0L,1L,4L,13L,56L,272L,1761L,14835L,174092L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243549Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243549.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243549Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243549.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243549.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243549Inst Instance=new A243549Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243550
+{
+public static readonly long[] Value={ 1L,1L,2L,6L,15L,58L,255L,1510L,10766L,94109L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243550Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243550.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243550Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243550.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243550.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243550Inst Instance=new A243550Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243551
+{
+public static readonly long[] Value={ 1L,1L,2L,5L,14L,56L,256L,1656L,13952L,163878L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243551Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243551.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243551Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243551.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243551.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243551Inst Instance=new A243551Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243552
+{
+public static readonly long[] Value={ 1L,1L,2L,6L,8L,25L,77L,333L,1668L,11355L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243552Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243552.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243552Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243552.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243552.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243552Inst Instance=new A243552Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243553
+{
+public static readonly long[] Value={ 1L,0L,1L,3L,1L,4L,5L,35L,130L,1293L,13529L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243553Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243553.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243553Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243553.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243553.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243553Inst Instance=new A243553Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243554
+{
+public static readonly long[] Value={ 1L,1L,1L,2L,1L,2L,1L,3L,1L,4L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243554Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243554.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243554Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243554.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243554.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243554Inst Instance=new A243554Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243555
+{
+public static readonly long[] Value={ 1L,0L,1L,1L,2L,3L,5L,14L,30L,95L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243555Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243555.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243555Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243555.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243555.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243555Inst Instance=new A243555Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243556
+{
+public static readonly long[] Value={ 1L,1L,1L,2L,1L,3L,2L,3L,0L,14L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243556Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243556.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243556Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243556.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243556.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243556Inst Instance=new A243556Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243557
+{
+public static readonly long[] Value={ 0L,0L,1L,4L,8L,23L,78L,337L,1690L,11418L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243557Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243557.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243557Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243557.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243557.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243557Inst Instance=new A243557Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243558
+{
+public static readonly long[] Value={ 1L,1L,2L,6L,9L,25L,76L,302L,1360L,7606L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243558Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243558.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243558Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243558.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243558.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243558Inst Instance=new A243558Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243559
+{
+public static readonly long[] Value={ 1L,1L,2L,5L,9L,26L,80L,340L,1690L,11432L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243559Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243559.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243559Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243559.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243559.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243559Inst Instance=new A243559Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243560
+{
+public static readonly long[] Value={ 1L,0L,1L,1L,2L,9L,27L,190L,1750L,25658L,531204L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243560Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243560.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243560Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243560.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243560.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243560Inst Instance=new A243560Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+public static class A243561
+{
+public static readonly long[] Value={ 1L,1L,1L,1L,1L,2L,1L,3L,2L,4L };
+public static readonly IEnumerable<byte[]> Bytes=Value.Select(BitConverter.GetBytes);
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(Bytes);
+}
+public class A243561Enumerable : IEnumerable<byte[]>
+{
+public IEnumerator<byte[]> GetEnumerator()
+{
+foreach (var b in A243561.Bytes) {
+yield return b;
+}
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return GetEnumerator();
+}
+}
+public class A243561Inst : IEnumerable<long>
+{
+public static readonly long[] Value=A243561.Value;
+public static Stream Stream
+{
+get
+{
+var ms=new MemoryStream();
+// ReSharper disable once ForCanBeConvertedToForeach
+for (var i=0; i < Value.Length; i++)
+{
+var b=BitConverter.GetBytes(Value[i]);
+ms.Write(b,0,b.Length);
+}
+return ms;
+}
+}
+
+public static Stream StreamLazy=>new EnumerableStream(A243561.Bytes);
+public long this[int i]=>Value[i];
+
+public static A243561Inst Instance=new A243561Inst();
+
+public IEnumerator<long> GetEnumerator()
+{
+return (Value as IEnumerable<long>).GetEnumerator();
+}
+IEnumerator IEnumerable.GetEnumerator()
+{
+return Value.GetEnumerator();
+}
+}
+
+}
