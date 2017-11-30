@@ -1,0 +1,31 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
+
+before_build:
+  - cmd: nuget sources add -Name dsp-myget -Source https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json
+  - cmd: nuget restore
+
+build: off
+
+build_script:
+  - ps: dotnet build "OEISOutput.sln" -c Release
+  - ps: dotnet publish "OEISOutput.sln" -v d --configuration Release -f net47
+  - ps: dotnet pack "**/*.csproj" -c Release -o "OEISOutput" --no-build
+
+artifacts:
+  - path: "**\\OEISOutput\\*.nupkg"
+
+# Automatically register private account and/or project AppVeyor NuGet feeds.
+nuget:
+  account_feed: false
+  project_feed: false
+  disable_publish_on_pr: true     # disable publishing of .nupkg artifacts to account/project feeds for pull request builds
+
+deploy:
+  - provider: NuGet
+    skip_symbols: false
+    api_key:
+      secure: ZkuAOJwTjYBiEAHrTHkVDYaNRBaWDDmvpkUVN+9PnsHWQnfDDdDWWAMPltRlYNYn
+      

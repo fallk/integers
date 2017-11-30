@@ -1,9 +1,0 @@
-
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net47</TargetFramework>
-  </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SuperOEISGenerator\SuperOEISGenerator\SuperOEISGenerator.csproj" />
-  </ItemGroup>
-</Project>
